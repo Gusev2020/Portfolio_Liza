@@ -1,0 +1,43 @@
+.intro {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    position: relative;
+    span {
+      display: block;
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 63px;
+      left: 74px;
+      bottom: 16px;
+      width: 108px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../../images/elips-sm.svg');
+    }
+  }
+
+  &__description {
+    font-size: 36px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 525px;
+  }
+
+  &__photo {
+    &-img {
+      border-radius: 0 0 0 150px;
+    }
+  }
+}

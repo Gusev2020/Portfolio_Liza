@@ -1,0 +1,23 @@
+.link-to {
+  color: $white;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(#8f4b3b, 0.75);
+  gap: 5px;
+  font-size: 20px;
+  margin-top: auto;
+  padding: 22px 25px;
+  border-radius: 20px;
+  align-self: flex-start;
+  font-weight: 400;
+
+  &--pinterest {
+    padding: 10px;
+    text-align: center;
+  }
+
+  &--scroll-top {
+    padding: 15px;
+    margin-top: 10px;
+  }
+}

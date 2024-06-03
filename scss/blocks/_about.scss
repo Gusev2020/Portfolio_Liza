@@ -1,0 +1,22 @@
+.about {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+
+    &-text {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

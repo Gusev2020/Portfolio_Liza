@@ -1,0 +1,65 @@
+.cta {
+  &__title {
+    width: 100%;
+    max-width: 535px;
+    position: relative;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../../images/elips-bg.svg');
+      height: 176px;
+      width: 445px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: $ligth-green;
+    width: 100%;
+    max-width: 521px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    padding-left: 10px;
+    position: relative;
+    padding-top: 20px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 150px;
+      width: 1px;
+      background-color: $ligth-green;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 1px;
+      background-color: $ligth-green;
+      bottom: 0;
+      right: 0;
+    }
+
+    &-item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
