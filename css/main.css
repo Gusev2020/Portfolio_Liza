@@ -601,6 +601,11 @@ a:hover {
     margin-top: 120px;
   }
 }
+@media screen and (max-width: 374px) {
+  .project {
+    margin-top: 140px;
+  }
+}
 .project__inner {
   text-align: center;
 }
@@ -789,6 +794,11 @@ a:hover {
 @media screen and (max-width: 1024px) {
   .project__item-img {
     width: 350px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .project__item-img {
+    width: 300px;
   }
 }
 
