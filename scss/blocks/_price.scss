@@ -3,6 +3,10 @@
     position: relative;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -13,6 +17,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url('./../images/elips-sm.svg');
+
+      @media screen and (max-width: 1024px) {
+        width: 91px;
+        left: 169px;
+        height: 53px;
+      }
     }
   }
 
@@ -24,6 +34,15 @@
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 14px;
+      max-width: 298px;
+      line-height: 1.5;
+    }
   }
 
   &__items {
@@ -31,6 +50,10 @@
     gap: 50px 100px;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1024px) {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -41,17 +64,30 @@
     padding: 20px 20px 30px 20px;
     background-color: rgba($dark-green, 0.15);
 
+    @media screen and (max-width: 1024px) {
+      padding: 14px 14px 20px 14px;
+    }
+
     &-title {
       font-size: 32px;
       margin-bottom: 20px;
       font-weight: 400;
       color: $accent;
       text-align: center;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     &-total {
       font-size: 20px;
       font-weight: 400;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -59,6 +95,10 @@
     margin-left: 20px;
     font-size: 20px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+    }
 
     &-item {
       list-style-type: disc;

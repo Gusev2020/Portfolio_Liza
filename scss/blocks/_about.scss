@@ -3,19 +3,61 @@
     display: flex;
     justify-content: space-between;
     gap: 120px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 15px;
+    }
+  }
+
+  &__content {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+      line-height: 1.2;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
   }
 
   &__description {
     font-size: 20px;
     font-weight: 400;
 
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
     &-text {
       &:not(:last-child) {
         margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__photo {
+    .about__content {
+      display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      height: 165px;
+
+      &-img {
+        width: 165px;
+        height: 165px;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+
+      .about__content {
+        display: block;
       }
     }
   }

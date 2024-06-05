@@ -10,6 +10,11 @@ a {
   text-decoration: none;
   color: $accent;
   font-size: 20px;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: #8f4b3b;
+  }
 }
 .container {
   max-width: 1190px;
@@ -22,12 +27,21 @@ a {
 
 .section {
   margin-bottom: 70px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
 }
 
 .title {
   font-size: 48px;
   font-weight: 400;
   color: $accent;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 38px;
+  }
 }
 
 .no-scroll {

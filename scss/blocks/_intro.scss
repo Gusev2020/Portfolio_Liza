@@ -1,7 +1,11 @@
 .intro {
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 50px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   &__content {
@@ -11,9 +15,16 @@
 
   &__title {
     position: relative;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 15px;
+    }
+
     span {
       display: block;
       margin-bottom: 20px;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+      }
     }
     &::before {
       content: '';
@@ -25,6 +36,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url('./../images/elips-sm.svg');
+      @media screen and (max-width: 1024px) {
+        left: 5px;
+        bottom: 7px;
+      }
     }
   }
 
@@ -33,11 +48,26 @@
     font-weight: 400;
     width: 100%;
     max-width: 525px;
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 50px;
+    }
   }
 
   &__photo {
+    @media screen and (max-width: 1024px) {
+      height: 165px;
+    }
+
     &-img {
       border-radius: 0 0 0 150px;
+
+      @media screen and (max-width: 1024px) {
+        width: 165px;
+        height: 165px;
+        border-radius: 0 0 0 55px;
+      }
     }
   }
 }

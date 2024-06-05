@@ -14,6 +14,13 @@
       width: 445px;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media screen and (max-width: 1024px) {
+        width: 192px;
+        height: 76px;
+        left: 56px;
+        bottom: 16px;
+      }
     }
   }
 
@@ -23,17 +30,30 @@
     color: $ligth-green;
     width: 100%;
     max-width: 521px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__social {
     padding-left: 10px;
     position: relative;
     padding-top: 20px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
 
     &::before {
       position: absolute;
@@ -53,6 +73,10 @@
       background-color: $ligth-green;
       bottom: 0;
       right: 0;
+
+      @media screen and (max-width: 1024px) {
+        left: 100px;
+      }
     }
 
     &-item {
@@ -60,6 +84,10 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
   }
 }

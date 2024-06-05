@@ -12,7 +12,13 @@
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header-logo">
-            <img src="./images/лого.svg" alt="Логотип" />
+            <picture>
+              <source
+                srcset="./images/logo-sm.svg"
+                media="(max-width:1024px)"
+              />
+              <img src="./images/лого.svg" alt="Логотип" />
+            </picture>
           </a>
           <nav class="header__nav">
             <div class="header__nav-item">
@@ -28,6 +34,9 @@
               <a href="#" class="header__nav-link">Контакты</a>
             </div>
           </nav>
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn"></button>
+          </div>
         </div>
       </div>
     </header>
@@ -43,7 +52,7 @@
               <div class="intro__description">
                 Создам интерфейс, который вдохновит и упростит работу
               </div>
-              <a href="#" class="link-to">
+              <a href="#" class="link-to link-to--intro">
                 Обсудить проект
                 <img src="./images/arrow-top.svg" alt="Связаться" />
               </a>
@@ -68,6 +77,21 @@
                 src="./images/photo-2.png"
                 alt="Фото дизайнера"
               />
+              <div class="about__content">
+                <h2 class="title about__title">
+                  Дизайнер, которому можно доверять
+                </h2>
+                <div class="about__description">
+                  <p class="about__description-text">
+                    Привет, меня зовут Елизавета. Я web-дизайнер и занимаюсь
+                    дизайном с 2022 года
+                  </p>
+                  <p class="about__description-text">
+                    Моя цель - создавать визуально привлекательные и удобные
+                    веб-сайты, которые отвечают потребностям и задачам клиентов.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="about__content">
               <h2 class="title about__title">
@@ -282,7 +306,7 @@
                 +7(927)371-20-94
               </div>
             </div>
-            <a href="#" class="link-to">
+            <a href="#" class="link-to link-to--cta">
               Заполнить Бриф на сайт
               <img src="./images/arrow-top.svg" alt="Заполнить Бриф на сайт" />
             </a>
@@ -293,8 +317,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <a href="/" class="header-logo">
-            <img src="./images/лого.svg" alt="Логотип" />
+          <a href="/" class="footer-logo">
+            <picture>
+              <source
+                srcset="./images/logo-sm.svg"
+                media="(max-width:1024px)"
+              />
+              <img src="./images/лого.svg" alt="Логотип" />
+            </picture>
           </a>
           <nav class="footer__nav">
             <div class="footer__nav-item">
