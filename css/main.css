@@ -304,7 +304,7 @@ a {
   width: 108px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../images/elips-sm.svg");
+  background-image: url("./../../images/elips-sm.svg");
 }
 .intro__description {
   font-size: 36px;
@@ -446,7 +446,7 @@ a {
   width: 108px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../images/elips-sm.svg");
+  background-image: url("./../../images/elips-sm.svg");
 }
 .price__description {
   width: 100%;
@@ -508,7 +508,7 @@ a {
 .cta__title::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/elips-bg.svg");
+  background-image: url("./../../images/elips-bg.svg");
   height: 176px;
   width: 445px;
   background-repeat: no-repeat;
