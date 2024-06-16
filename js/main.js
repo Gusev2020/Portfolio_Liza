@@ -9,7 +9,7 @@ headerNav.addEventListener('click', function () {
   headerInner.classList.toggle('header__inner--mobile')
 })
 
-// якоря
+// anchors
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -24,3 +24,10 @@ for (let anchor of anchors) {
   })
   console.log(anchor)
 }
+
+//preloader
+
+window.addEventListener('load', function () {
+  const preloader = document.getElementById('preloader')
+  preloader.style.display = 'none'
+})
